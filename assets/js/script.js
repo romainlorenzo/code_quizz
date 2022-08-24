@@ -412,34 +412,32 @@ startQuizBtnEl.addEventListener("click", function() {
                             answerCorrectWrong.style.display="";
                             answerCorrectWrong.textContent = "Wrong!";
                             answerCorrectWrong.style.borderTop = "solid #800080";
-                            score = 1; // Give user a 10+ score
-                            questionNumber = 3; // Move to the next question which is the second question
+                            score = 1;
+                            questionNumber = 3;
                             answerNumber = 2;
                             break;
                         case "Quotes":
                             console.log("Inside the case now");
-                            score = 1; // Give user a 10+ score
-                            questionNumber = 0; // Game is over, no more questions to show.
-                            answerNumber = 0; // Game is over, no more answers to show.
+                            score = 1; 
+                            questionNumber = 0;
+                            answerNumber = 0;
                             console.log("I'm here" + timeInterval);
                             answer1BtnEl.style.display = 'none';
                             answer2BtnEl.style.display = 'none';
                             answer3BtnEl.style.display = 'none';
                             answer4BtnEl.style.display = 'none';
-                            answerCorrectWrong.style.display='none'; // When time is over correct or wrong will go away.
-                            startQuizBtnEl.style.display = 'none'; // Remove Start Quiz button.
-                            //answerCorrectWrong.style.display=""; // Enables text content on correct and wrong answers
+                            answerCorrectWrong.style.display='none';
+                            startQuizBtnEl.style.display = 'none';
                             questionDisplay.textContent = "You have finished the quiz!";
-                            finalScoreDisplay.style.display = ""; // Allow display for final score
-                            enterInitials.style.display = ""; // Display Message Enter initials
-                            enterInitialsTextArea.style.display="";  // Capture user score once submitted is clicked.
-                            finalAnswerCheck = 1; // Final Wrong
+                            finalScoreDisplay.style.display = ""; 
+                            enterInitials.style.display = ""; 
+                            enterInitialsTextArea.style.display=""; 
+                            finalAnswerCheck = 1;
                             lastQuestionWrong();
-                            finalScoreDisplay.textContent = "Your final score is: " + highScore; // Assign the latest high score.
+                            finalScoreDisplay.textContent = "Your final score is: " + highScore;
                             enterInitials.textContent = "Enter initials: "
                             submitScoreEl.style.display = "";
                             submitScoreEl.textContent = "Submit";                   
-                            //Exit the quiz/timer.
                             clearInterval(timeInterval);
                             
                         break;
@@ -453,11 +451,9 @@ startQuizBtnEl.addEventListener("click", function() {
 
                 if (questionDisplay.textContent === "Arrays can be used to store the following" && answer4BtnEl.textContent === "All of the above") {
                     console.log("Correct");
-                   // timeLeft += 1; // Add a second for a correct answer as it will take one second to move to the next question
-                    //Game is overquestionNumber = 4; // Move to the next question
-                    questionNumber = 3; // Move to the next question which is the fourth question
+                    questionNumber = 3;
                     answerNumber = 2;
-                    answerCorrectWrong.style.display=""; // Enables text content on correct and wrong answers
+                    answerCorrectWrong.style.display="";
                     answerCorrectWrong.textContent = "Correct!"
                     answerCorrectWrong.style.borderTop = "solid #800080";
                     answerCorrectWrongGrid.appendChild(answerCorrectWrong);
@@ -470,8 +466,8 @@ startQuizBtnEl.addEventListener("click", function() {
                             answerCorrectWrong.style.display="";
                             answerCorrectWrong.textContent = "Wrong!";
                             answerCorrectWrong.style.borderTop = "solid #800080";
-                            score = 1; // Give user a 10+ score
-                            questionNumber = 1; // Move to the next question which is the second question
+                            score = 1;
+                            questionNumber = 1;
                             answerNumber = 1;
                             break;
                         case "Square Brackets":
@@ -479,8 +475,8 @@ startQuizBtnEl.addEventListener("click", function() {
                             answerCorrectWrong.style.display="";
                             answerCorrectWrong.textContent = "Wrong!";
                             answerCorrectWrong.style.borderTop = "solid #800080";
-                            score = 1; // Give user a 10+ score
-                            questionNumber = 2; // Move to the next question which is the second question
+                            score = 1;
+                            questionNumber = 2;
                             answerNumber = 4;
                             break;
                         case "Console.log":
@@ -488,8 +484,8 @@ startQuizBtnEl.addEventListener("click", function() {
                             answerCorrectWrong.style.display="";
                             answerCorrectWrong.textContent = "Wrong!";
                             answerCorrectWrong.style.borderTop = "solid #800080";
-                            score = 1; // Give user a 10+ score
-                            questionNumber = 4; // Move to the next question which is the second question
+                            score = 1;
+                            questionNumber = 4;
                             answerNumber = 3;
                         break;
                         case "Parentheses":
@@ -497,30 +493,26 @@ startQuizBtnEl.addEventListener("click", function() {
                             answerCorrectWrong.style.display="";
                             answerCorrectWrong.textContent = "Wrong!";
                             answerCorrectWrong.style.borderTop = "solid #800080";
-                            score = 1; // Give user a 10+ score
-                            //questionNumber = 4; // Move to the next question which is the second question
-                            //answerNumber = 3;
-                            questionNumber = 0; // Game is over, no more questions to show.
-                            answerNumber = 0; // Game is over, no more answers to show.
+                            score = 1;
+                            questionNumber = 0; 
+                            answerNumber = 0; 
                             console.log("I'm here" + timeInterval);
                             answer1BtnEl.style.display = 'none';
                             answer2BtnEl.style.display = 'none';
                             answer3BtnEl.style.display = 'none';
                             answer4BtnEl.style.display = 'none';
-                            answerCorrectWrong.style.display='none'; // When time is over correct or wrong will go away.
-                            startQuizBtnEl.style.display = 'none'; // Remove Start Quiz button.
-                            //answerCorrectWrong.style.display=""; // Enables text content on correct and wrong answers
+                            answerCorrectWrong.style.display='none';
+                            startQuizBtnEl.style.display = 'none'; 
                             questionDisplay.textContent = "You have finished the quiz!";
-                            finalScoreDisplay.style.display = ""; // Allow display for final score
-                            enterInitials.style.display = ""; // Display Message Enter initials
-                            enterInitialsTextArea.style.display="";  // Capture user score once submitted is clicked.
-                            finalAnswerCheck = 1; // Final Wrong
+                            finalScoreDisplay.style.display = "";
+                            enterInitials.style.display = ""; 
+                            enterInitialsTextArea.style.display=""; 
+                            finalAnswerCheck = 1;
                             lastQuestionWrong();
-                            finalScoreDisplay.textContent = "Your final score is: " + highScore; // Assign the latest high score.
+                            finalScoreDisplay.textContent = "Your final score is: " + highScore;
                             enterInitials.textContent = "Enter initials: "
                             submitScoreEl.style.display = "";
                             submitScoreEl.textContent = "Submit";                   
-                            //Exit the quiz/timer.
                             clearInterval(timeInterval);
                         break;
                         
@@ -534,21 +526,16 @@ startQuizBtnEl.addEventListener("click", function() {
         else if(timeLeft === 0){
 
           console.log("I'm here" + timeInterval);
-          questionNumber = 0; // Reset all questions
-          answerNumber = 0; // Reset all possible answers.
+          questionNumber = 0;
+          answerNumber = 0;
           answer1BtnEl.style.display = 'none';
           answer2BtnEl.style.display = 'none';
           answer3BtnEl.style.display = 'none';
           answer4BtnEl.style.display = 'none';
-          answerCorrectWrong.style.display='none'; // When time is over correct or wrong will go away.
-          //answerCorrectWrong.style.display=""; // Enables text content on correct and wrong answers
+          answerCorrectWrong.style.display='none';
           questionDisplay.textContent = "Game Over!. Try again by clicking on \"Click Start Quiz\"";
           startQuizBtnEl.style.display = "";
           clearInterval(timeInterval);
-          
-          //gridContainer.appendChild(questionDisplayEl);
-    
-          //displayMessage();
         }
       }, 1000)
 
